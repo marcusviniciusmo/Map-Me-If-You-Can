@@ -6,7 +6,6 @@ export function App() {
   return (
     <>
       <BrowserRouter>
-        <h1>Map Me If You Can</h1>
         <Router />
       </BrowserRouter>
 
