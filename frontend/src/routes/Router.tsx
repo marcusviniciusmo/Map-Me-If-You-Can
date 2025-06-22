@@ -1,4 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
+import { routes } from './routes';
 import { Home } from '../pages/Home';
 import { Destinations } from '../pages/Destinations';
 import { Tips } from '../pages/Tips';
@@ -8,11 +9,11 @@ import { NotFound } from '../pages/NotFound';
 export function Router() {
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/destinations" element={<Destinations />} />
-      <Route path="/tips" element={<Tips />} />
-      <Route path="/contact" element={<Contact />} />
-      <Route path="*" element={<NotFound />} />
+      <Route path={routes.home} element={<Home />} />
+      <Route path={routes.destinations} element={<Destinations />} />
+      <Route path={routes.tips} element={<Tips />} />
+      <Route path={routes.contact} element={<Contact />} />
+      <Route path={routes.notFound} element={<NotFound />} />
     </Routes>
   );
 }
